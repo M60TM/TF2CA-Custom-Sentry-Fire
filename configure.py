@@ -2,21 +2,25 @@
 
 # plugin names, relative to `scripting/`
 plugins = [
-	'sample_plugin.sp',
+	'tf2ca_custom_sentry_fire.sp',
 ]
 
 # files to copy to builddir, relative to root
 # plugin names from previous list will be copied automatically
-copy_files = [ ]
+copy_files = [
+	'gamedata/tf2.sentry.txt',
+	'scripting/include/tf2ca_custom_sentry_fire.inc'
+]
 
 # additional directories for sourcepawn include lookup
 # `scripting/include` is explicitly included
 include_dirs = [
-	# 'third_party/vendored'
+	'third_party/submodules',
+	'third_party/vendored'
 ]
 
 # required version of spcomp (presumably pinned to SM version)
-spcomp_min_version = (1, 9)
+spcomp_min_version = (1, 11)
 
 ########################
 # build.ninja script generation below.

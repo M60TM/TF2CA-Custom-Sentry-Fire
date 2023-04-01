@@ -11,7 +11,7 @@
 #pragma newdecls required
 
 #include <tf_custom_attributes>
-#include <tf2ca_sentryfirebullet>
+#include <tf2_sentryfirebullet>
 #include <tf2ca_custom_building>
 #include <tf2ca_stocks>
 
@@ -123,7 +123,7 @@ MRESReturn OnSentryFireRocketPost(int sentry, DHookReturn hReturn)
 	return MRES_Ignored;
 }
 
-public MRESReturn TF2CA_SentryFireBullet(int sentry, int builder, FireBullets_t &info)
+public MRESReturn TF2_SentryFireBullet(int sentry, int builder, FireBullets_t &info)
 {
 	char customfireName[CUSTOM_SENTRY_FIRE_MAX_NAME_LENGTH];
 	if (!TF2CustAttr_ClientHasString(builder, "custom sentry bullet type", customfireName, sizeof(customfireName)))

@@ -1,0 +1,104 @@
+"Games"
+{
+	"tf"
+	{
+		"Functions"
+		{
+			"CObjectSentrygun::SentryThink()"
+			{
+				"signature"		"CObjectSentrygun::SentryThink()"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
+			"CObjectSentrygun::Fire()"
+			{
+				"signature"		"CObjectSentrygun::Fire()"
+				"callconv"		"thiscall"
+				"return"		"bool"
+				"this"			"entity"
+			}
+			"CObjectSentrygun::SentryRotate()"
+			{
+				"signature"		"CObjectSentrygun::SentryRotate()"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
+			"CObjectSentrygun::Attack()"
+			{
+				"signature"		"CObjectSentrygun::Attack()"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
+			"CObjectSentrygun::FireRocket()"
+			{
+				"signature"		"CObjectSentrygun::FireRocket()"
+				"callconv"		"thiscall"
+				"return"		"bool"
+				"this"			"entity"
+			}
+			"CObjectSentrygun::GetEnemyAimPosition"
+			{
+				"signature" 	"CObjectSentrygun::GetEnemyAimPosition"
+				"callconv" 		"thiscall"
+				"return" 		"vector"
+				"this" 			"entity"
+				"arguments"
+				{
+					"pEnemy"
+					{
+						"type" "cbaseentity"
+					}
+				}
+			}
+		}
+
+		"Signatures"
+		{
+			"CObjectSentrygun::SentryThink()"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CObjectSentrygun11SentryThinkEv"
+				"windows"	"\x55\x8B\xEC\x51\x56\x8B\xF1\x57\x80\xBE\x2A\x2A\x00\x00\x00\xC7\x86\x2A\x2A\x00\x00\x00\x80\x89\x44"
+			}
+			"CObjectSentrygun::Fire()"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CObjectSentrygun4FireEv"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x54\x02\x00\x00"
+			}
+			"CObjectSentrygun::SentryRotate()"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CObjectSentrygun12SentryRotateEv"
+				"windows"	"\x55\x8B\xEC\x51\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\xD9\xEE\xD9\xC9"
+			}
+			"CObjectSentrygun::Attack()"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CObjectSentrygun6AttackEv"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x34\x56\x8B\xF1\x8B\x06"
+			}
+			"CObjectSentrygun::FireRocket()"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CObjectSentrygun10FireRocketEv"
+				"windows"	"\x55\x8B\xEC\xA1\x2A\x2A\x2A\x2A\x81\xEC\xD0\x00\x00\x00"
+			}
+			"CObjectSentrygun::GetEnemyAimPosition"
+			{
+				"library" 	"server"
+				"linux"		"@_ZNK16CObjectSentrygun19GetEnemyAimPositionEP11CBaseEntity"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x0C\x56\x57\x8B\x7D\x0C\x8B\xCF"
+			}
+			"CBaseAnimatingOverlay::AddGesture"
+			{
+				"library" 	"server"
+				"linux"		"@_ZN21CBaseAnimatingOverlay10AddGestureE8Activityb"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x5D\x08\x57\x53\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x8B\xCF"
+			}
+		}
+	}
+}
