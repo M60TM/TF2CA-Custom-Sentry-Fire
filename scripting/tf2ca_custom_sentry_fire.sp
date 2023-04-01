@@ -12,7 +12,6 @@
 
 #include <tf_custom_attributes>
 #include <tf2_sentryfirebullet>
-#include <tf2ca_custom_building>
 #include <tf2ca_stocks>
 
 #define PLUGIN_VERSION "1.0.0"
