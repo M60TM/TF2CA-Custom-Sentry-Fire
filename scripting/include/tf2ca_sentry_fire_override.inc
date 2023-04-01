@@ -4,7 +4,7 @@
 
 #define __tf2ca_sentry_fire_override_included
 
-#include <tf2ca_sentryfirebullet>
+#include <tf2_sentryfirebullet>
 
 typedef SentryFireBulletCallback = function void(int builder, int sentry, const char[] attrName, FireBullets_t info);
 

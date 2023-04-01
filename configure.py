@@ -9,7 +9,7 @@ plugins = [
 # plugin names from previous list will be copied automatically
 copy_files = [
 	'gamedata/tf2.sentry.txt',
-	'scripting/include/tf2ca_custom_sentry_fire.inc'
+	'scripting/include/tf2ca_sentry_fire_override.inc'
 ]
 
 # additional directories for sourcepawn include lookup
