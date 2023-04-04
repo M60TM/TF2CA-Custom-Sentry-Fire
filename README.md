@@ -3,6 +3,7 @@ The plugin allows you to override sentry gun's bullet fire and rocket fire.
 
 ## Dependency
 * sourcemod 1.11+
+* [TFCustAttr](https://github.com/nosoop/SM-TFCustAttr)
 * [TF2-Sentry-Fire-Bullet](https://github.com/M60TM/TF2-Sentry-Fire-Bullet)
 * [tf2ca_stock (compile only)](https://github.com/M60TM/TF2CA-Custom-Building/blob/master/scripting/include/tf2ca_stocks.inc)
 * [stocksoup (compile only)](https://github.com/nosoop/stocksoup)
@@ -23,6 +24,8 @@ typedef SentryFireRocketCallback = function void(int builder, int sentry, const 
  */
 native bool TF2CA_SentryFireRocket_Register(const char[] attrName, SentryFireRocketCallback callback);
 ```
+
+`"custom sentry bullet type"  "double_laser"`
 
 ----
 
